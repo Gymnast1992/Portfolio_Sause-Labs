@@ -1,2 +1,2 @@
 # testove_softonix
-Testove zavdannia dlia nastupnogo interview))) 
+Testove zavdannia dlia nastupnogo interview 
