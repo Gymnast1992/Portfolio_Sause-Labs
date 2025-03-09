@@ -3,7 +3,7 @@
 const baseUrl = "https://jsonplaceholder.typicode.com/posts";
 
 describe("DELETE Requests", () => {
-  it("TC07, Verify that successful deletion returns 200", () => {
+  it("API-07, Verify that successful deletion returns 200", () => {
     cy.request({
       method: "DELETE",
       url: baseUrl + "/1",
@@ -12,7 +12,7 @@ describe("DELETE Requests", () => {
     });
   });
 
-  it("TC08, Verify that deletion of non-existent post returns 404", () => {
+  it("API-08, Verify that deletion of non-existent post returns 404", () => {
     cy.request({
       method: "DELETE",
       url: baseUrl + "/posts/007",
