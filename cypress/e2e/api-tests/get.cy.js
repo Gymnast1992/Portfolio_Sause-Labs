@@ -4,7 +4,10 @@ const baseUrl = "https://jsonplaceholder.typicode.com";
 
 describe("GET Requests", () => {
   it("TC03, Should get all posts", () => {
-    cy.request("GET", baseUrl + "/posts").then((response) => {
+    cy.request({
+      method: "GET",
+      url: baseUrl + "/posts",
+    }).then((response) => {
       expect(response.status).to.equal(200);
     });
   });

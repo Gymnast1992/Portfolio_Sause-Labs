@@ -28,6 +28,8 @@ describe("Login", () => {
   });
 
   it("TC03, Password Input Masking", () => {
-    cy.get("#password").type(Password).should("have.value", Password); //Filling out the Password;
+    cy.get("#password")
+      .type(Password)
+      .should("have.css", "-webkit-text-security"); //Verifuing that CSS property is hidden;
   });
 });

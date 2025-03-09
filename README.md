@@ -5,12 +5,12 @@ Testove zavdannia dlia nastupnogo interview
 
 Overview:
 
-This repository contains automated end-to-end and API tests for the SoftOnix project using Cypress framework.
+This repository contains automated e2e UI and API tests for the SoftOnix project using Cypress framework.
 
 # Before running the tests, ensure the following tools are installed:
 
     - Node.js (latest version);
-    - Cypress - The testing framework used in this project;
+    - Cypress: "^14.1.0" - The testing framework used in this project;
     - Git - For cloning this repository;
 
 # INSTALATION:
@@ -34,5 +34,5 @@ This repository contains automated end-to-end and API tests for the SoftOnix pro
 # RUN TESTS:
 
     1. npx cypress open ;
-    2. Navigate to e2e/ ;
-    3. Navigate to api/ ;
+    2. Navigate to e2e/ui ;
+    3. Navigate to e2e/api ;
