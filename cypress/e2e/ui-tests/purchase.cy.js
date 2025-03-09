@@ -36,5 +36,6 @@ describe("Purchase", () => {
     cy.get('[id="finish"]').click();
     //Verify the Complete Purchase Message;
     cy.get("h2.complete-header").should("have.text", completePurchaseMessage);
+    cy.contains(completePurchaseMessage).should("be.visible");
   });
 });
