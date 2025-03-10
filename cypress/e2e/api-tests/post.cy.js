@@ -9,7 +9,7 @@ describe("POST Requests", () => {
       userId: "Semiankiv",
       id: 1,
       title: "Testove SoftOnix",
-      body: "Made by MS"
+      body: "Made by MS",
     }).then((response) => {
       postResponseUserId = response.body.userId;
       expect(response.status).to.equal(201);
@@ -26,7 +26,7 @@ describe("POST Requests", () => {
       },
       {
         userId: "Semiankiv",
-        title: "Testove SoftOnix"
+        title: "Testove SoftOnix",
       }
     ).then((response) => {
       expect(response.status).to.be.equal(400); //But the response is 201 !!!

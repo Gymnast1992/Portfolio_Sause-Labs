@@ -24,7 +24,7 @@ describe("PUT Requests", () => {
       url: baseUrl + "/1000",
       failOnStatusCode: false,
     }).then((response) => {
-      expect(response.status).to.equal(404); //The response is 500 !
+      expect(response.status).to.equal(404); //The response is 500 Internal Server Error !
     });
   });
 });

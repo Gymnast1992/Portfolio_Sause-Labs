@@ -1,11 +1,11 @@
 # testove_softonix
-Testove zavdannia dlia nastupnogo interview 
+Testove zavdannia 
 
 # Cypress E2E, API Tests for SoftOnix
 
 Overview:
 
-This repository contains automated e2e UI and API tests for the SoftOnix project using Cypress framework.
+This repository contains automated e2e UI (login and purchase) tests and API (POST, GET, PUT, DELETE) requests for the SoftOnix project using Cypress framework.
 
 # Before running the tests, ensure the following tools are installed:
 
