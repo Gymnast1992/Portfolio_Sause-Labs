@@ -16,11 +16,11 @@ describe("Login", () => {
   });
 
   it("TC01, Successful Login with Valid Credentials", () => {
-    loginPage.loginAsAStandardUser(Username, Password, textProducts);
+    loginPage.loginAsAStandardUser(Username, Password);
     // cy.get("#user-name").type(Username).should("be.visible"); //Filling out the Username;
     // cy.get("#password").type(Password).should("be.visible"); //Filling out the Password;
     // cy.get("#login-button").click(); //Click on the Login button;
-    // cy.get('[class="title"]').should("have.text", textProducts); //Verifying the text on the page;
+    loginPage.title.should("have.text", textProducts); //Verifying the text on the page;
   });
 
   it("TC02, Error Message for Invalid Credentials", () => {

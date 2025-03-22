@@ -15,11 +15,10 @@ class Login {
     return cy.get('[data-test="error"]');
   }
 
-  loginAsAStandardUser(username, password, text) {
+  loginAsAStandardUser(username, password) {
     this.inputUsername.type(username).should("be.visible");
     this.inputPassword.type(password).should("be.visible");
     this.buttonLogin.click();
-    this.title.should("have.text", text);
   }
 
   loginWithFakeUsername(username, password, errorMessage) {
