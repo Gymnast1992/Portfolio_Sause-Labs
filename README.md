@@ -1,12 +1,11 @@
 # Sause-Labs
 Sause-Labs website portfolio for UI
 
-# Cypress E2E for Sause-Labs website, and API requests in jsonplaceholder 
+# Cypress E2E for Sause-Labs website
 
 Overview:
 
-This repository contains automated e2e UI (login and purchase) tests for the Sause-Labs project using Cypress framework. 
-Also, it contains API (POST, GET, PUT, DELETE) requests, utilyzing jsonplaceholder 
+This repository contains automated e2e UI (login and purchase) tests for the Sause-Labs project using Cypress framework.  
 
 # Before running the tests, ensure the following tools are installed:
 
@@ -20,7 +19,7 @@ Also, it contains API (POST, GET, PUT, DELETE) requests, utilyzing jsonplacehold
    git clone https://github.com/Gymnast1992/Portfolio_Sause-Labs.git ;
 
 2.Navigate to the project directory:
-   cd testove_softonix ;
+   cd Portfolio_Sause-Labs ;
 
 3.Install the required Node.js dependencies:
    npm install
@@ -36,4 +35,3 @@ Also, it contains API (POST, GET, PUT, DELETE) requests, utilyzing jsonplacehold
 
     1. npx cypress open ;
     2. Navigate to e2e/ui ;
-    3. Navigate to e2e/api ;
