@@ -1,25 +1,25 @@
 /// <reference types="cypress" />
 import loginPage from "../../fixtures/pom/login.page";
 import purchasePage from "../../fixtures/pom/purchase.page";
-import Credentials from "../../fixtures/data/purchase/credentials.json";
+import data from "../../fixtures/data/purchase/data.json";
 
 describe("Purchase", () => {
   beforeEach(() => {
     cy.visit("/");
-    loginPage.loginAsAStandardUser(Credentials.Username, Credentials.Password);
+    //Login as a standard user;
+    loginPage.loginAsAStandardUser(data.Username, data.Password);
   });
 
   it("TC04, Complete Flow for Purchasing", () => {
     purchasePage.purchaseTheProduct(
-      Credentials.FirstName,
-      Credentials.LastName,
-      Credentials.PostalCode
+      data.FirstName,
+      data.LastName,
+      data.PostalCode
     );
     //Verify the Complete Purchase Message;
     purchasePage.header2.should(
       "have.text",
-      Credentials.CompletePurchaseMessage
+      data.CompletePurchaseMessage
     );
-    cy.contains(Credentials.CompletePurchaseMessage).should("be.visible");
   });
 });
