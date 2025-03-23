@@ -21,18 +21,14 @@ class Login {
     this.buttonLogin.click();
   }
 
-  loginWithFakeUsername(username, password, errorMessage) {
+  loginWithFakeUsername(username, password) {
     this.inputUsername.type(username).should("be.visible");
     this.inputPassword.type(password).should("be.visible");
     this.buttonLogin.click();
-    this.errorField.should("have.text", errorMessage);
   }
 
-  verifyThePasswordInputMasking(password) {
-    this.inputPassword
-      .type(password)
-      .should("have.value", password)
-      .should("have.css", "-webkit-text-security");
+  typePassword(password) {
+    this.inputPassword.type(password);
   }
 }
 

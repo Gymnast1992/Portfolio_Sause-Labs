@@ -4,5 +4,8 @@
     "PostalCode": "1609",
     "Username": "standard_user",
     "Password": "secret_sauce",
-    "CompletePurchaseMessage": "Thank you for your order!"
+    "CompletePurchaseMessage": "Thank you for your order!",
+    "textProducts": "Products",
+    "fakeUsername": "Semiankiv01",
+    "errorMessage": "Epic sadface: Username and password do not match any user in this service"
 }
