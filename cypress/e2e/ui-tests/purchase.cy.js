@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import loginPage from "../../fixtures/pom/login.page";
 import purchasePage from "../../fixtures/pom/purchase.page";
-import data from "../../fixtures/data/purchase/data.json";
+import data from "../../fixtures/data/data.json";
 
 describe("Purchase", () => {
   beforeEach(() => {
