@@ -1,11 +1,12 @@
-# testove_softonix
-Testove zavdannia 
+# Sause-Labs
+Sause-Labs website portfolio for UI
 
-# Cypress E2E, API Tests for SoftOnix
+# Cypress E2E for Sause-Labs website, and API requests in jsonplaceholder 
 
 Overview:
 
-This repository contains automated e2e UI (login and purchase) tests and API (POST, GET, PUT, DELETE) requests for the SoftOnix project using Cypress framework.
+This repository contains automated e2e UI (login and purchase) tests for the Sause-Labs project using Cypress framework. 
+Also, it contains API (POST, GET, PUT, DELETE) requests, utilyzing jsonplaceholder 
 
 # Before running the tests, ensure the following tools are installed:
 
@@ -16,7 +17,7 @@ This repository contains automated e2e UI (login and purchase) tests and API (PO
 # INSTALATION:
 
 1.Clone the repository to your local machine:
-   git clone https://github.com/Gymnast1992/testove_softonix.git ;
+   git clone https://github.com/Gymnast1992/Portfolio_Sause-Labs.git ;
 
 2.Navigate to the project directory:
    cd testove_softonix ;
